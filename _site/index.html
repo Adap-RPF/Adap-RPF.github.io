@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Follow-Bench: A Unified Motion Planning Benchmark for Socially-Aware Robot Person Following</title>
+  <link rel="icon" type="image/x-icon" href="">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered" style="max-width: 150%; width: 100%; padding-left: 0; padding-right: 0;">
+            <h1 class="title is-1 publication-title" 
+                style="width: 100%; word-wrap: break-word; font-size: 2.5rem; line-height: 1.3;">
+              Follow-Bench: A Unified Motion Planning Benchmark for Socially-Aware Robot Person Following
+            </h1>
+            <!-- <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://medlartea.github.io/" target="_blank">Hanjing Ye</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=O0M3wWQAAAAJ&hl=en" target="_blank">Yu Zhan</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/Situ-Weixi" target="_blank">Weixi Situ</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=xffeKl8AAAAJ&hl=en" target="_blank">Guangcheng Chen</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://jingwenyust.github.io/" target="_blank">Jingwen Yu</a><sup>1,4</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=eEt3G0oAAAAJ&hl=zh-CN" target="_blank">Ziqi Zhao</a><sup>3</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=3Y9wVfMOtP4C&hl=en" target="_blank">Kuanqi Cai</a><sup>2</sup>,</span>
+              <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=1hKOgRoAAAAJ&hl=en" target="_blank">Arash Ajoudani</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=J7UkpAIAAAAJ&hl=en" target="_blank">Hong Zhang</a><sup>1</sup></span>
+            </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>RCV Lab, Southern University of Science and Technology<br></span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>2</sup>HRI<sup><i>2</i></sup> Lab, Italian Institute of Technology<br></span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>3</sup>RPAI Lab, Southern University of Science and Technology<br></span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>4</sup>Chen Kar-Shun RI, Hong Kong University of Science and Technology<br></span>
+                  </div> -->
+                  
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <!-- Arxiv PDF link -->
+                      <!-- <span class="link-block">
+                        <a href="http://arxiv.org/abs/2505.07446" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="ai ai-arxiv"></i>
+                        </span>
+                        <span>arXiv</span>
+                      </a>
+                    </span> -->
+
+                    <!-- Video -->
+                    <!-- <span class="link-block">
+                      <a href="https://youtu.be/LLZT9cEa6K0" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>Video</span>
+                    </a>
+                  </span> -->
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code Coming Soon</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <!-- <span class="link-block">
+                  <a href="" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-home"></i>
+                    </span>
+                    <span>Dataset (TODO)</span>
+                  </a>
+                </span> -->
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image -->
+<!-- <section class="hero teaser">
+  <div class="hero-body">
+    <div class="container">
+      <img src="static/images/cover.png" alt="MY ALT TEXT" style="width: 100%; max-width: 1600px; height: auto;"/>
+      <h2 class="subtitle has-text-centered">
+        xxx
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser image -->
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/openAndSimulation-compressed-1080p.mp4"
+        type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>        <div class="content has-text-justified">
+          <p>
+            Robot person following (RPF)---mobile robots that follow and assist a specific person---has emerging applications in personal assistance, security patrols, eldercare, and logistics. To be effective, such robots must follow the target while ensuring safety and comfort for both the target and surrounding people. In this work, we present the first end-to-end study of RPF, which (i) surveys representative scenarios, motion-planning methods, and evaluation metrics with a focus on safety and comfort; (ii) introduces Follow-Bench, a unified benchmark simulating diverse scenarios, including various target trajectory patterns, dynamic-crowd flows, and environmental layouts; and (iii) re-implements six popular RPF planners, ensuring that both safety and comfort are systematically considered. Moreover, we evaluate the two highest-performing planners from our benchmark on a differential-drive robot to provide insights into real-world deployment. Extensive simulation and real-world experiments provide quantitative insights into the safety-comfort trade-offs of existing planners, while revealing open challenges and future research directions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Review</h2>
+        <div class="content has-text-justified">
+          <p>
+            We focus on two critical and quantifiable requirements that are frequently prioritized: <strong>safety</strong> and <strong>comfort</strong>:
+          </p>
+          <ul>
+            <li>
+              <strong>Safety:</strong>
+              An objective requirement, ensuring that the robot avoids collisions while maintaining continuous observation of the target person.
+            </li>
+            <li>
+              <strong>Comfort:</strong>
+              In contrast, this is more subjective and is typically reflected in the robot's motion patterns and the relative distances between the robot, the target person, and surrounding pedestrians (i.e., proxemics). Higher-level aspects of comfort are beyond the scope of this review, such as following and approaching behaviors, group following, or explicit human-robot interaction.
+            </li>
+          </ul>
+          <p>
+            Based on these two requirements, we review <strong>RPF-related scenarios, evaluation metrics and planners</strong>. To enable systematic benchmarking, we introduce <strong>Follow-Bench</strong>, a unified benchmark for evaluating RPF planners under diverse conditions, including various <strong>target trajectory patterns, pedestrian-flow patterns, and environmental layouts</strong>. We re-implement six popular RPF planners, ensuring that both safety and comfort are systematically considered, including: <strong>MPC-based, MPC w/ Traj., MPC w/ DS., SFM-based, DWA-based and DWA w/ Traj.</strong>
+          </p>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="section">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Benchmark Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="static/images/average.png" alt="MY ALT TEXT"/>
+      </div>
+      <div class="item">
+        <img src="static/images/humanNumsAndOcc.png" alt="MY ALT TEXT"/>
+      </div>
+      <div class="item">
+        <img src="static/images/dists.png" alt="MY ALT TEXT"/>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Video carousel -->
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Real-world Experiments</h2>
+
+      <!-- 三栏轮播，每栏两段视频 -->
+      <div id="results-carousel" class="carousel results-carousel" data-infinite="true">
+        <!-- 第一栏 -->
+        <div class="item">
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <video poster="" autoplay controls muted loop width="100%">
+                <source src="static/videos/rda-naive-combined-720p.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-half">
+              <video poster="" autoplay controls muted loop width="100%">
+                <source src="static/videos/rda-traj-naive-combined-720p.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <p class="subtitle is-6">MPC w/ Traj. provides smoother motion than MPC-based.</p>
+        </div>
+
+        <!-- 第二栏 -->
+        <div class="item">
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <video poster="" autoplay controls muted loop width="100%">
+                <source src="static/videos/rda-static-combined-720p.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-half">
+              <video poster="" autoplay controls muted loop width="100%">
+                <source src="static/videos/rda-traj-static-combined-720p.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <p class="subtitle is-6">MPC w/ Traj. can generate wider-arc motions to avoid collision or stuck, but suffers from temporary target loss under limited camera FoV and may reduce user comfort.</p>
+        </div>
+
+        <!-- 第三栏 -->
+        <div class="item">
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <video poster="" autoplay controls muted loop width="100%">
+                <source src="static/videos/rda-dynamic-combined-720p.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-half">
+              <video poster="" autoplay controls muted loop width="100%">
+                <source src="static/videos/rda-traj-dynamic-combined-720p.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <p class="subtitle is-6">Both MPC w/ Traj. and MPC are reactive rather than proactive, as they do not explicitly model pedestrian motion.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Challenges and Future Directions</h2>
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <strong>Balancing Trade-offs between Safety and Comfort:</strong>
+              Most RPF planners struggle with the trade-off between keeping a socially comfortable distance to the target and avoiding collisions, especially in crowded or cluttered environments. Fixed point/trajectory tracking often leads to occlusions and safety risks, while optimization-based planners face computational challenges in dynamic settings. Promising directions include (i) adaptive trajectory prediction that integrates human motion forecasts and visibility constraints, (ii) convexified or sampling-based MPC to reduce real-time complexity, and (iii) hierarchical planning that separates high-level candidate generation from low-level collision-free execution.
+            </li>
+            <li>
+              <strong>Improving Spatial-temporal Obstacle Representation, Prediction and Planning:</strong>
+              Current polygon-based clustering works for discrete clutter but struggles with continuous structures (e.g., walls, doorways) and may merge targets with nearby obstacles. Future work should develop more robust obstacle representations and adaptive safe distances for different spatial contexts. Incorporating not only target trajectories but also predictions of surrounding pedestrians—using advanced models like Social-GAN—can enable smoother, socially aware planning that balances visibility, safety, and proxemics.
+            </li>
+            <li>
+              <strong>Discovering and Utilizing Environmental Patterns:</strong>
+              Beyond short-term trajectory prediction, RPF can benefit from recognizing long-term crowd and environmental patterns. For example, following pedestrian flow at crosswalks or detouring around dense formations allows safer, more comfortable re-approach to the target. A promising direction is to integrate high-level pattern recognition with low-level planning to balance visibility, safety, and comfort in complex environments.
+            </li>
+            <li>
+              <strong>Towards More Expressive Intermediate Representations:</strong>
+              Point- or trajectory-based references often fail under occlusions, while cost maps and potential fields lack distance encoding and are costly to update. ESDFs provide smooth, distance-aware planning but remain computationally heavy in dynamic settings. Future directions include designing intermediate representations that jointly encode visibility, safety, and social constraints—potentially using learning-based methods for compact and adaptive modeling.
+            </li>
+
+          </ul>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
