@@ -136,7 +136,7 @@
 <!-- End teaser image -->
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
@@ -145,8 +145,29 @@
       </video>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
+
+<!-- ===== Teaser Figure (before Abstract) ===== -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <figure class="has-text-centered" style="margin-top:1rem;">
+        <img src="static/images/figure1.png" alt="Adap-RPF teaser figure"
+             style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08);" />
+        <figcaption class="is-size-6" style="margin-top:0.75rem;color:#363636;">
+          <em>Adap-RPF in a real-world dynamic crowded environment.</em>
+          The robot proactively avoids dynamic occlusions (the pedestrian outlined
+          in red) by adaptively sampling trajectory based on predicted human motion
+          (colored arrows). Dashed outlines indicate agent positions at time T0,
+          while solid outlines indicate their positions at time T1. The golden star marks the
+          selected optimal following point, and golden circles indicate the candidate points.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- ===== End Teaser Figure ===== -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -163,24 +184,7 @@
   </div>
 </section>
 <!-- End paper abstract -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">System Design</h2>
-        <div class="content has-text-justified">
-          <figure class="has-text-centered" style="margin-top:1rem;">
-            <img src="static/images/figure1.png" alt="System design diagram" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08);" />
-            <figcaption class="has-text-grey is-size-6" style="margin-top:.75rem;">图 1：System Design 概览（请替换为你的说明）。</figcaption>
-          </figure>
-          <p><strong>System overview:</strong> To tackle the unified challenge of outdoor ZSON—pursuing distant targets that appear as tiny projections while remaining robust to dynamic visibility changes—we design a lightweight perception–navigation system that integrates multi-scale semantic amplification with saliency-driven heading maintenance.</p>
-          <p>As illustrated in the figure, the system forms a closed perception–decision loop. The perception module analyzes RGB observations through a multi-scale tile pyramid, amplifying weak semantic cues from tiny, long-range targets and estimating both target direction and visibility status. These outputs are consumed by the navigation module, which adapts robot behavior accordingly: when the target is visible, the estimated direction directly guides frontier selection and forward progress; when the target becomes partially visible or fully occluded, the system leverages stored keyframes to sustain orientation, while triggering active search or fallback strategies for reliable re-identification.</p>
-          <p>Together, they close the loop for outdoor ZSON: the aligned multi-scale tile hierarchy makes regional semantic saliency reliable for far-field perception, and the same saliency sustains heading under variant visibility over time.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 <!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
