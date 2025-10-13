@@ -309,29 +309,23 @@
                  style="width:100%;max-width:100%;height:auto;border-radius:12px;
                         box-shadow:0 10px 30px rgba(0,0,0,.1);" />
           </figure>
-          
+
           <p class="is-size-5" 
              style="margin-top:0.75rem;color:#363636;text-align:justify;line-height:1.7;">
 
             To evaluate the performance of target visibility and following performance on the benchmark, 
-            we compare our method with several baselines categorized as follows: 
+            we compare our <span style="font-weight:600;color:#000;">Adap-RPF</span> method with several baselines categorized as follows: 
             <span style="font-weight:600;color:#000;">(1) Multiple Predefined Following Points.</span> 
-            <strong>Vu's Method</strong> <a href="#vu2025autonomous">[Vu et al., 2025]</a> adopts a similar 
+            <strong>Vu's Method</strong> adopts a similar 
             frame-sample-evaluate-plan approach to ours but leverages current scene observations for following 
             points selection and local planning. 
             <span style="font-weight:600;color:#000;">(2) Optimization-based.</span> 
-            <strong>Wang's Method</strong> <a href="#wang2024continuous">[Wang et al., 2024]</a> is the first 
+            <strong>Wang's Method</strong> is the first 
             to propose maintaining target visibility in RPF by formulating an optimization function within the 
             NMPC framework, incorporating multiple constraints. 
             <span style="font-weight:600;color:#000;">(3) Fixed Following Point.</span> 
             <strong>RDA Planner Trajectory Following (RDA-Traj)</strong> achieves SOTA performance in the public 
-            benchmark <a href="#ye2025bench">[Ye et al., 2025]</a>. It uses a Kalman-filter-based prediction model 
-            to estimate the future trajectory of the target. A person-following trajectory is then extrapolated 
-            based on the predicted target trajectory and a fixed following position. The RDA planner 
-            <a href="#han2023rda">[Han et al., 2023]</a> is then used to track this trajectory. 
-            Notably, to ensure a fair comparison of proactive planning capabilities, no person-search techniques 
-            <a href="#ye2025rpf">[Ye et al., 2025]</a> are employed; thus, the robot does not attempt to re-find 
-            the target once it becomes occluded.
+            benchmark.
           </p>
 
         </div>
