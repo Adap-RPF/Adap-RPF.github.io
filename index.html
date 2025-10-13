@@ -174,7 +174,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-2">Abstract</h2>        <div class="content has-text-justified">
+        <h2 class="title is-3">Abstract</h2>        <div class="content has-text-justified">
           <p>
             Robot person following (RPF) is a core capability in human-robot interaction, enabling robots to assist users in daily activities, collaborative work, and other service scenarios. However, achieving practical RPF remains challenging due to frequent occlusions, particularly in dynamic and crowded environments. Existing approaches often rely on fixed-point following or sparse candidate-point selection with oversimplified heuristics, which cannot adequately handle complex occlusions caused by moving obstacles such as pedestrians. To address these limitations, we propose an adaptive trajectory sampling method that generates dense candidate points within socially aware zones and evaluates them using a multi-objective cost function. Based on the optimal point, a person-following trajectory is estimated relative to the predicted motion of the target. We further design a prediction-aware model predictive path integral (MPPI) controller that simultaneously tracks this trajectory and proactively avoids collisions using predicted pedestrian motions. Extensive experiments show that our method outperforms state-of-the-art baselines in smoothness, safety, robustness, and human comfort, with its effectiveness further demonstrated on a mobile robot in real-world scenarios.
           </p>
@@ -266,7 +266,7 @@
   <div class="container" style="max-width:1400px;">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <h2 class="title is-2">Framework Design</h2>
+        <h2 class="title is-3">Framework Design</h2>
         <div class="content has-text-justified">
 
           <!-- 图像 -->
@@ -299,7 +299,7 @@
   <div class="container" style="max-width:1400px;">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <h2 class="title is-2">Evaluation</h2>
+        <h2 class="title is-3">Evaluation</h2>
         <h3 class="title is-4 has-text-centered">Baseline Comparision</h3>
         <div class="content has-text-justified">
 
@@ -439,7 +439,8 @@
 <!-- </section> --> 
 <!-- End video carousel -->
 
-<section class="section">
+<!--Video-->
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -461,7 +462,46 @@
       </div>
     </div>
   </div>
+</section> -->
+<!--Video End-->
+
+<!-- ===== Simulation and Real-World Experiments ===== -->
+<section class="section">
+  <div class="container" style="max-width:1400px;"> <!-- 扩大容器宽度 -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full"> <!-- 让视频占整宽 -->
+        <h2 class="title is-3 has-text-centered" style="margin-bottom:1.5rem;">
+          Simulation and Real-World Experiments
+        </h2>
+
+        <div class="content has-text-centered" style="margin-top:1rem;">
+
+          <!-- 视频 -->
+          <div style="position:relative;overflow:hidden;border-radius:16px;
+                      box-shadow:0 12px 30px rgba(0,0,0,0.15);">
+            <video 
+              autoplay 
+              controls 
+              muted 
+              loop 
+              style="width:100%;height:auto;max-height:800px;object-fit:cover;display:block;">
+              <source src="static/videos/icra2026.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- 视频说明文字 -->
+          <p style="margin-top:1rem;font-size:1.05rem;color:#363636;line-height:1.6;">
+            Demonstrations of simulation and real-world person-following experiments, 
+            showcasing <strong>Adap-RPF</strong> operating in dynamic and crowded environments. 
+            The robot proactively avoids occlusions and maintains smooth following behavior.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 
 <!-- <section class="section">
   <div class="container is-max-desktop">
