@@ -1,7 +1,7 @@
 from pathlib import Path
 from pdf2image import convert_from_path
 
-SEARCH_DIR = Path("static/images")
+SEARCH_DIR = Path("static/images2")
 DPI = 300
 FORMAT = "PNG"
 
