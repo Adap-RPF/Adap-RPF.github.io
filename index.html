@@ -253,9 +253,9 @@
 
 <!-- ===== Framework Design ===== -->
 <section class="section">
-  <div class="container" style="max-width:1400px;"> <!-- 宽度调大以适配更宽图片 -->
+  <div class="container" style="max-width:1400px;">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-full"> <!-- 改成 full 宽度，让图像占满容器 -->
+      <div class="column is-full">
         <h2 class="title is-3">Framework Design</h2>
         <div class="content has-text-justified">
 
@@ -266,49 +266,35 @@
                  style="width:100%;max-width:100%;height:auto;border-radius:12px;
                         box-shadow:0 10px 30px rgba(0,0,0,.1);" />
             <figcaption class="is-size-6" 
-                        style="margin-top:0.75rem;color:#363636;text-align:center;">
-              Fig. 3. <strong>Target-centric Adaptive Following Trajectory Sampling.</strong>
+                        style="margin-top:0.75rem;color:#363636;text-align:center;line-height:1.6;">
+              <strong>Target-centric Adaptive Following Trajectory Sampling.</strong>
+              (a) <strong>Following Trajectory Sampling.</strong> Candidate following points are generated 
+              using Sobol sampling within a target-centric semi-annular region defined by the target’s personal 
+              and social zones. The candidates are evaluated using a multi-objective cost function that accounts 
+              for target visibility, collision risk, social compliance, and smoothness. A following trajectory 
+              is then constructed relative to the predicted target trajectory using an offset 
+              (<em>d</em>, <em>θ</em>) based on the selected optimal point.
+              <br><br>
+              (b) <strong>Proximity Cost (Eq. 6).</strong> Minimum distance <em>d<sub>1</sub></em> to surrounding 
+              pedestrians is computed from predicted trajectories and social zones; candidates intruding into 
+              personal space (e.g., <strong>C<sub>t</sub><sup>3</sup></strong>, <strong>C<sub>t</sub><sup>1</sup></strong>) 
+              are discarded, and <strong>C<sub>t</sub><sup>2</sup></strong> is selected.
+              <br><br>
+              (c) <strong>Occlusion Cost (Eq. 5).</strong> Occlusion is estimated via IoU between pedestrian and 
+              target projections (<strong>P<sub>t+N</sub><sup>h</sup></strong> and 
+              <strong>P<sub>t+N</sub><sup>Tar</sup></strong>) using predicted trajectories; 
+              <strong>C<sub>t</sub><sup>1</sup></strong> is rejected due to partial occlusion (light gray), 
+              whereas <strong>C<sub>t</sub><sup>2</sup></strong> remains visible.
+              <br><br>
+              (d) <strong>Distance Cost (Eq. 8).</strong> Penalizes deviation from the desired spacing to the target.
+              <br><br>
+              (e) <strong>Travel Cost (Eq. 9).</strong> Encourages minimal path effort from the robot’s current 
+              position (green rectangle <strong>P<sub>t</sub><sup>R</sup></strong>).
+              <br><br>
+              (f) <strong>Stickiness Cost (Eq. 10).</strong> Promotes continuity by favoring points near the 
+              previously selected following point.
             </figcaption>
           </figure>
-
-          <!-- 图像说明 / 描述文字 -->
-          <p style="margin-top:1rem;">
-            <strong>(a) Following Trajectory Sampling.</strong> Candidate following points are generated 
-            using Sobol sampling within a target-centric semi-annular region defined by the target’s personal 
-            and social zones. The candidates are evaluated using a multi-objective cost function that accounts 
-            for target visibility, collision risk, social compliance, and smoothness. A following trajectory 
-            is then constructed relative to the predicted target trajectory using an offset (<em>d<sub>r</sub></em>) 
-            based on the selected optimal point.
-          </p>
-
-          <p>
-            <strong>(b) Proximity Cost (Eq. 6).</strong> Minimum distance <em>d<sub>p</sub></em> to surrounding 
-            pedestrians is computed from predicted trajectories and social zones; candidates intruding into 
-            personal space (e.g., C<sup>3</sup><sub>r</sub>) are discarded, and C<sup>2</sup><sub>r</sub> 
-            is selected.
-          </p>
-
-          <p>
-            <strong>(c) Occlusion Cost (Eq. 5).</strong> Occlusion is estimated via IoU between pedestrian 
-            and target projections (β<sup>t</sup><sub>h→r</sub> and β<sup>t+Δt</sup><sub>h→r</sub>) 
-            using predicted trajectories; C<sub>r</sub> is rejected due to partial occlusion (light gray), 
-            whereas C<sup>2</sup><sub>r</sub> remains visible.
-          </p>
-
-          <p>
-            <strong>(d) Distance Cost (Eq. 8).</strong> Penalizes deviation from the desired spacing to 
-            the target.
-          </p>
-
-          <p>
-            <strong>(e) Travel Cost (Eq. 9).</strong> Encourages minimal path effort from the robot’s 
-            current position (green rectangle P<sup>t</sup><sub>r</sub>).
-          </p>
-
-          <p>
-            <strong>(f) Stickiness Cost (Eq. 10).</strong> Promotes continuity by favoring points near the 
-            previously selected following point.
-          </p>
 
         </div>
       </div>
