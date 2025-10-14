@@ -486,12 +486,12 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full"> <!-- 让视频占整宽 -->
         <h2 class="title is-3 has-text-centered" style="margin-bottom:1.5rem;">
-          Bechmark Simulation and Real-World Experiments Video
+          Benchmark Simulation and Real-World Experiments Video
         </h2>
 
         <div class="content has-text-centered" style="margin-top:1rem;">
 
-          <!-- 视频 -->
+          <!-- 视频容器 -->
           <div style="position:relative;overflow:hidden;border-radius:16px;
                       box-shadow:0 12px 30px rgba(0,0,0,0.15);">
             <video 
@@ -499,22 +499,60 @@
               controls 
               muted 
               loop 
-              style="width:100%;height:auto;max-height:800px;object-fit:cover;display:block;">
+              class="responsive-video">
               <source src="static/videos/Adap-RPF-compressed-720p.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
 
-          <!-- 视频说明文字 -->
-          <!-- <p style="margin-top:1rem;font-size:1.05rem;color:#363636;line-height:1.6;">
+          <!-- 视频说明文字（可选） -->
+          <!--
+          <p style="margin-top:1rem;font-size:1.05rem;color:#363636;line-height:1.6;">
             Demonstrations of simulation and real-world person-following experiments, 
             showcasing <strong>Adap-RPF</strong> operating in dynamic and crowded environments. 
             The robot proactively avoids occlusions and maintains smooth following behavior.
-          </p> -->
+          </p>
+          -->
         </div>
       </div>
     </div>
   </div>
+
+  <!-- 响应式样式 -->
+  <style>
+    .responsive-video {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      object-fit: contain; /* 默认完整显示 */
+      display: block;
+      background-color: black; /* 防止视频尺寸变化时闪白 */
+    }
+
+    /* 横屏设备：尽量显示完整，不裁剪 */
+    @media (orientation: landscape) {
+      .responsive-video {
+        object-fit: contain !important;
+        max-height: 90vh !important;
+      }
+    }
+
+    /* 竖屏设备：填充画面以增强沉浸感 */
+    @media (orientation: portrait) {
+      .responsive-video {
+        object-fit: cover !important;
+        max-height: 80vh !important;
+      }
+    }
+
+    /* 适配大屏显示的标题和间距 */
+    @media (min-width: 1024px) {
+      .section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+    }
+  </style>
 </section>
 
 
